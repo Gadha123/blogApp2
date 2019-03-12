@@ -1,10 +1,19 @@
+<br/><br/>
 <p>
 <strong>Title:</strong>
   <%= @post.title %>
 </p>
- 
 <p>
-  <strong>Text:</strong>
+<strong>Posted By:</strong>
+  <%= @post.user.email %>
+</p>
+<p>
+<strong>Posted On:</strong>
+  <%= @post.created_at %>
+</p>
+<img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+<p>
+<strong>Text:</strong>
   <%= @post.text %>
 </p>
 <h2>Comments</h2>
