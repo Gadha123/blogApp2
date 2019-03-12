@@ -14,7 +14,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'kaminari'
 gem 'kaminari-bootstrap'
-gem 'letter_opener', group: :development
 gem 'overcommit', require: false
 gem 'pg'
 # Use Puma as the app server
@@ -27,9 +26,7 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 # Use CoffeeScript for .coffee assets and views
-
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -45,6 +42,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
 group :development do
+  gem 'letter_opener', group: :development
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
