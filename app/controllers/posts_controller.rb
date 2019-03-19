@@ -1,4 +1,6 @@
-# Post
+# frozen_string_literal: true
+
+# Post controller
 class PostsController < ApplicationController
   def new
     @post = current_user.posts.build
